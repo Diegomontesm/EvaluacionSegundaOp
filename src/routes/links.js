@@ -6,11 +6,11 @@ const pool = require('../database');
 //LLAMAMOS METODO PARA PROTEGER LINKS
 const {isLoggedIn} = require('../lib/auth');
 
-router.get('/add',isLoggedIn, (req, res)=>{
+router.get('/add', (req, res)=>{
     res.render('links/add');
 });
 
-router.post('/add', isLoggedIn,isLoggedIn,async (req,res )=>{
+router.post('/add', async (req,res )=>{
     const {title, url, description} = req.body;
     const newLink ={
         title,

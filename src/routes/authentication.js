@@ -5,31 +5,35 @@ const passport = require('passport');
 const {isLoggedIn, isNotLoggedIn} = require('../lib/auth');
 
 
-
-router.get('/signup', isNotLoggedIn ,(req, res) => {
+// SIGNUP
+router.get('/signup', isNotLoggedIn,(req, res) => {
     res.render('auth/signup');
-})
+});
 
-router.post('/signup', isNotLoggedIn,passport.authenticate('local.signup', {
-    successRedirect: '/profile',
+router.post('/signup', isNotLoggedIn, passport.authenticate('local.signup', {
+    successRedirect: '/signin',
     failureRedirect: '/signup',
-    failureFlash: true
+    //failureFlash: true
 }));
 
-router.get('/signin', isNotLoggedIn,(req, res) => {
+
+
+
+
+ router.get('/signin', isNotLoggedIn,(req, res) => {
     res.render('auth/signin');
 });
 
-router.post('/signin',isNotLoggedIn, (req, res, next) => {
+router.post('/signin',isNotLoggedIn,(req, res, next) => {
     passport.authenticate('local.signin', {
         successRedirect: '/profile',
-        failureRedirect: '/signin',
+        failureRedirect: '/profile',
         failureFlash: true
     })(req, res, next);
 });
 
 //VISTA A PROTEGER, POR LO TANTO USAREMOS EL METODO QUE LLAMAMOS ARRIBA EN AUTH.JS
-router.get('/profile', isLoggedIn, (req, res) => {
+router.get('/profile', (req, res) => {
     res.render('profile');
 });
 
@@ -37,5 +41,5 @@ router.get('/logout', (req, res) => {
     req.logOut();
     res.redirect('/signin');
 });
-
+ 
 module.exports = router;

@@ -3,22 +3,33 @@
         <div class="col-md-5 mx-auto">
             <div class="card text-center">
                 <div class="card-header">
-                    <h3>SignUp</h3>
+                    <h3>Regístrate</h3>
                 </div>
                 <div class="card-body">
                     <form action="/signup" method="POST">
+                        
                         <div class="form-group">
-                            <input type="text" name="fullname" placeholder="Ingrese su noombre completo" class="form-control" autofocus>
+                            <input type="text" name="NControl" placeholder="Ingrese su número de control" class="form-control" autofocus>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="username" placeholder="Ingrese su nombre de usuario" class="form-control">
+                            <input type="text" name="Nombre" placeholder="Ingrese su nombre completo" class="form-control" >
                         </div>
                         <div class="form-group">
+                            <input type="text" name="email" placeholder="Ingrese su correo electrónico" class="form-control">
+                        </div>
+                         <div class="form-group">
                             <input type="password" name="password" placeholder="Ingrese su contraseña" class="form-control">
                         </div>
                         <div class="form-group">
+                            <input type="text" name="semestre" placeholder="¿En qué semestre vas?" class="form-control">
+                        </div>                        
+                        <div class="form-group">
+                            <input type="text" name="carrera" placeholder="¿Qué carrera estudias?" class="form-control">
+                        </div>
+                       
+                        <div class="form-group">
                             <button class="btn btn-success btn-block">
-                                Sign Up
+                                Registrarse
                             </button>
                         </div>
                     </form>

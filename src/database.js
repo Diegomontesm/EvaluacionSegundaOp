@@ -21,7 +21,7 @@ pool.getConnection((err,connection)=>{
 
 });
 //PROMISIFY POOL QUERY, CONVIRTIENDO A PROMESAS LOS CALLBACKS
-
-pool.query = promisify(pool.query);
+/* 
+pool.query = promisify(pool.query); */
 
 module.exports = pool;
