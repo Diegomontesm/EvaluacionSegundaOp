@@ -28,4 +28,7 @@ Programación WEB<br>
 Prof. Carlos Rafael Levy Rojas
 
 # ENLACES
+Deploy del proyecto en heroku<br>
+https://miappcompleta.herokuapp.com/
+
 
