@@ -22,9 +22,9 @@ Adicionalmente, contiene una página principal (index) donde le da la bienvenida
 <a href="https://subefotos.com/ver/?83be392c9575eea4b079af21b8103e5do.png" target="_blank"><img src="http://thumbs.subefotos.com/83be392c9575eea4b079af21b8103e5do.jpg" /></a>
 <br>
 # DATOS DEL ALUMNO
-Montes Moreno Diego Ángel
-Periodo Enero-Julio 2020
-Programación WEB
+Montes Moreno Diego Ángel<br>
+Periodo Enero-Julio 2020<br>
+Programación WEB<br>
 Prof. Carlos Rafael Levy Rojas
 
 # ENLACES
